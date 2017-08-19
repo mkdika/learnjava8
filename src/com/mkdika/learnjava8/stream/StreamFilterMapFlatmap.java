@@ -28,7 +28,7 @@ public class StreamFilterMapFlatmap {
 
         System.out.println("Filter word > 10 and Initcap:");
         words.parallelStream()
-                .filter(w -> w.length() > 10)
+                .filter(w -> w.length() > 10)                
                 .map(String::toLowerCase)
                 .map(StreamFilterMapFlatmap::toInitCapitalize) // map is use to transform the stream element                      
                 .forEach(System.out::println);

@@ -1,7 +1,6 @@
 package com.mkdika.learnjava8.time;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.Period;
 
 /**

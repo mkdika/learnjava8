@@ -23,5 +23,7 @@ public class Period1 {
         System.out.println("\tYears: " + period1.getYears());
         System.out.println("\tMonths: " + period1.getMonths());
         System.out.println("\tDays: " + period1.getDays());
+        
+        
     }
 }

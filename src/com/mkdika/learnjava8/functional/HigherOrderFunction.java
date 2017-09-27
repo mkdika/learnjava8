@@ -12,7 +12,7 @@ public class HigherOrderFunction {
     public static void main(String[] args) {
         // higher order function. function as parameter, return value
         Function<Integer, String> fun = x -> String.valueOf("hof value=" + x);
-        BiFunction<Function<Integer, String>, Integer, String> hof = (v, i) -> v.apply(i);
+        BiFunction<Function<Integer, String>, Integer, String> hof = (v, i) -> v.apply(i);      
         System.out.println(hof.apply(fun, 666));
         // Result: hof value=666
 

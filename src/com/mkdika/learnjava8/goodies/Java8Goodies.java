@@ -12,8 +12,6 @@ public class Java8Goodies {
     public static void main(String[] args) {
         // String joining
         String result = String.join(" ", "My", "name", "is", "Maikel", "Chandika");
-        System.out.println(result);
-        System.out.println("Hello world");
+        System.out.println(result);       
     }
-
 }

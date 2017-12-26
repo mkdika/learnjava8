@@ -1,9 +1,7 @@
 package com.mkdika.learnjava8.functional;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -29,7 +27,7 @@ public class FunctionalFace {
 
         // Supplier
         printInt(() -> 78);
-        printInt(FunctionalFace::doubleInt);
+        printInt(FunctionalFace::doubleInt);               
 
         // Consumer
         Consumer<Integer> com = x -> System.out.println(intIs.apply(x));
@@ -61,5 +59,9 @@ public class FunctionalFace {
 
     private static void oddEvent(int n, Predicate<Integer> args) {
         System.out.println(new StringBuilder().append(n).append(" is ").append((args.test(n) ? "Event" : "Odd")).toString());
+    }
+    
+    public static int test(int n) throws Exception {
+        return n;
     }
 }

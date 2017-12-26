@@ -7,6 +7,11 @@ package com.mkdika.learnjava8.basic;
 public class Operator2 {
 
     public static void main(String[] args) {
+        
+        
+        String a[]= new String[10];
+       
+                
 //        int a = 97;
 //        int b = 98;
 //        System.out.print((char) a + (char) b);

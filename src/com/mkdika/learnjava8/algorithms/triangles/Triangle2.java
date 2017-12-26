@@ -19,7 +19,7 @@ public class Triangle2 {
 
     public static void main(String[] args) {
 
-        int x = 9; // harus ganjil (1-9)
+        int x = 7; // harus ganjil (1-9)
 
         int y = ((x - 1) / 2);
         int i = 1;

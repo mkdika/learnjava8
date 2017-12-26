@@ -17,7 +17,9 @@ public class LambdaExpressionSorting {
      */
     public static void main(String[] args) {
         System.out.println("Sort by Word length:");
-        Arrays.sort(planets, (String a, String b) -> Integer.compare(a.length(), b.length()));
+        Arrays.sort(planets, (String a, String b) ->
+            Integer.compare(a.length(), b.length()) 
+                    );
         for (String s : planets) {
             System.out.println(s);
         }

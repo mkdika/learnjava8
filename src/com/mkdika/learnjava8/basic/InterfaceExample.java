@@ -1,5 +1,8 @@
 package com.mkdika.learnjava8.basic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Maikel Chandika <mkdika@gmail.com>
@@ -33,8 +36,7 @@ class Lion implements Run {
 
     @Override
     public double getMaxSpeed() {
-        if (null instanceof Lion) {
-            
+        if (null instanceof Lion) {            
         }
         return 100;
     }

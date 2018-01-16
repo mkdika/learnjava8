@@ -29,7 +29,7 @@ public class TestArrayDeque {
         
         // add element of array
         ad.add(3);
-        ad.add(4);
+        ad.add(4);        
         System.out.println("Add Element. content: " + ad.toString());
         
         // add element to its first (head) & last (tail) index

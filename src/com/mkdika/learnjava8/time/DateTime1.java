@@ -28,7 +28,7 @@ public class DateTime1 {
         System.out.println("Date2: " + date2);
         System.out.println("Is date1 before date2? " + (date1.isBefore(date2)));
         System.out.println("Date3 (current date): " + date3);
-        System.out.println("Date3 - The day after tommorow: " + date3.plusDays(2));
+        System.out.println("Date3 - The day after tommorow: " + date3.plusDays(2));        
         System.out.println("Date4: " + date4);        
         System.out.println("\tDay of Month: " + date4.getDayOfMonth());
         System.out.println("\tDay of Week: " + date4.getDayOfWeek());

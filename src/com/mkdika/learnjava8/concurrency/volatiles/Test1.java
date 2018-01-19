@@ -1,4 +1,4 @@
-package com.mkdika.learnjava8.multithread.volatiles;
+package com.mkdika.learnjava8.concurrency.volatiles;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

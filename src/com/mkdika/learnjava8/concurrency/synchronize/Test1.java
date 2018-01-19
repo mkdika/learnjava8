@@ -1,4 +1,4 @@
-package com.mkdika.learnjava8.multithread.synchronize;
+package com.mkdika.learnjava8.concurrency.synchronize;
 
 /**
  *

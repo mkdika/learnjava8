@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
  * @author Maikel Chandika <mkdika@gmail.com>
  * 
  * Serial Stream vs Parallel Stream vs Parallel Stream forEachOrdered 
- * BENCHMARK
+ * BENCHMARK.
  */
 public class ParallelStreamExample1 {
 
@@ -24,6 +24,8 @@ public class ParallelStreamExample1 {
         long l3 = System.currentTimeMillis();
         IntStream.range(1, 1000).parallel().forEachOrdered(i -> System.out.print(i + " "));
         System.out.println("\nParallel Stream forEachOrdered: " + (System.currentTimeMillis() - l3) + " msecs.\n");
+        
+        
     }
 
 }

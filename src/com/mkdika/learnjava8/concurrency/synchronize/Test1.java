@@ -1,5 +1,7 @@
 package com.mkdika.learnjava8.concurrency.synchronize;
 
+import java.util.concurrent.Callable;
+
 /**
  *
  * @author Maikel Chandika <mkdika@gmail.com>
@@ -52,7 +54,7 @@ class ThreadDemo implements Runnable {
         printDemo.printCount();
         System.out.println("Thread " + threadName + " finishing.");
     }
-
+        
     public void start() {
         System.out.println("Starting " + threadName);
         if (thread == null) {
@@ -61,3 +63,5 @@ class ThreadDemo implements Runnable {
         }
     }
 }
+
+

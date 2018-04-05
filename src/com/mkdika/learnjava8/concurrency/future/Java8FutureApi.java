@@ -1,4 +1,4 @@
-package com.mkdika.learnjava8.concurrent;
+package com.mkdika.learnjava8.concurrency.future;
 
 import java.io.BufferedReader;
 import java.io.IOException;

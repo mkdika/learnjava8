@@ -1,7 +1,5 @@
 package com.mkdika.learnjava8.concurrency.synchronize;
 
-import java.util.concurrent.Callable;
-
 /**
  *
  * @author Maikel Chandika <mkdika@gmail.com>

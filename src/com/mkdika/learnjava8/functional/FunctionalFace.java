@@ -23,7 +23,7 @@ public class FunctionalFace {
         System.out.println(intIs.apply(121));
 
         // UnaryOperator
-        UnaryOperator<Integer> randInt = x -> (int) (Math.random() * 100);
+        UnaryOperator<Integer> randInt = x -> (int) (Math.random() * 100 * x);
 
         // Supplier
         printInt(() -> 78);

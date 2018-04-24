@@ -1,5 +1,6 @@
 package com.mkdika.learnjava8.concurrency.completablefuture;
 
+import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -15,11 +16,12 @@ public class CfRunAssync {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         // Run a task specified by a Runnable Object asynchronously.
+                
         CompletableFuture<Void> future = CompletableFuture.runAsync(new Runnable() {
             @Override
-            public void run() {
-                // Simulate a long-running Job
+            public void run() {        
                 try {
+                    // calculate something
                     TimeUnit.SECONDS.sleep(2);
                 } catch (InterruptedException e) {
                     throw new IllegalStateException(e);
@@ -29,6 +31,6 @@ public class CfRunAssync {
         });
 
         // Block and wait for the future to complete
-        future.get();
+       future.get();               
     }
 }

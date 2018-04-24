@@ -4,6 +4,7 @@ package com.mkdika.learnjava8.basic.test;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Vector;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
@@ -37,6 +38,8 @@ public class Test {
         
         mt.put(null, 789);
         System.out.println(mt.get(null));                        
+        
+        Vector v = new Vector();
     }
     
 }

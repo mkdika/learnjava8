@@ -13,10 +13,10 @@ public class TestSerializable {
 
         Customer c = new Customer("maikel", "chandika");
         c.setShowName("Maikel Chan");
-        System.out.println(c.toString());
+        System.out.println(c);
 
         try (ObjectOutputStream oos
-                = new ObjectOutputStream(new FileOutputStream("/home/maikel/customer.obj"))) {
+                = new ObjectOutputStream(new FileOutputStream("customer.obj"))) {
             oos.writeObject(c);
             System.out.println("Done");
         } catch (Exception ex) {

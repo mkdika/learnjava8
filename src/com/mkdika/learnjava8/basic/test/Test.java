@@ -40,6 +40,7 @@ public class Test {
         System.out.println(mt.get(null));                        
         
         Vector v = new Vector();
+        String x = new String();
     }
     
 }

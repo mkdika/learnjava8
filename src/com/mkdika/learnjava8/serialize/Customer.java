@@ -13,7 +13,10 @@ public class Customer implements Serializable  {
     private String firstName;
     private String lastName;
     
+    // this does not include while serialize
     private transient String showName;
+    
+    private static String email = "abcx@gmail.com";
     
     public Customer() {
         
@@ -50,6 +53,6 @@ public class Customer implements Serializable  {
 
     @Override
     public String toString() {
-        return "[firstName="+firstName+", lastName="+lastName+", showName="+showName+"]";
+        return "[firstName="+firstName+", lastName="+lastName+", showName="+showName+", email="+email+"]";
     }        
 }

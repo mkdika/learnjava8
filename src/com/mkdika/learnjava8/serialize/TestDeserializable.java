@@ -8,10 +8,10 @@ public class TestDeserializable {
     public static void main(String[] args) {
 
         try (ObjectInputStream ois
-                = new ObjectInputStream(new FileInputStream("/home/maikel/customer.obj"))) {
+                = new ObjectInputStream(new FileInputStream("test/xyz.obj"))) {
 
             Customer c = (Customer) ois.readObject();
-            System.out.println(c.toString());
+            System.out.println(c);
 
         } catch (Exception ex) {
         }

@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class TestRunnable1 {
    
     public static void main(String[] args) {
-        Thread threadA = new Thread(new Task(2000),"Task-A");
+        Thread threadA = new Thread(new Task(2000),"Task-A");        
         Thread threadB = new Thread(new Task(4000),"Task-B");
         
         threadB.start();

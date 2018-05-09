@@ -28,7 +28,7 @@ public final class TrueSingleton {
     public static final DummyService getInstance() {
         if (instance != null) return instance;
         
-        synchronized(key) {
+        synchronized(TrueSingleton.class) {
             if (instance == null) {
                 instance = new DummyService();
             }
@@ -47,6 +47,6 @@ class DummyService {
 // driver class for demo
 class DemoTrueSingleton {
     public static void main(String[] args) {        
-        TrueSingleton.getInstance().print();
+        TrueSingleton.getInstance().print();                
     }
 }

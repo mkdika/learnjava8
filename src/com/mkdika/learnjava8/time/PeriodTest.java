@@ -7,7 +7,7 @@ import java.time.Period;
  *
  * @author Maikel Chandika <mkdika@gmail.com>
  */
-public class Period1 {
+public class PeriodTest {
 
     /*  Java 8 Date Time API:
         ---------------------       
@@ -22,8 +22,6 @@ public class Period1 {
         System.out.println("Periode (date1 to date2): " + period1);
         System.out.println("\tYears: " + period1.getYears());
         System.out.println("\tMonths: " + period1.getMonths());
-        System.out.println("\tDays: " + period1.getDays());
-        
-        
+        System.out.println("\tDays: " + period1.getDays());                
     }
 }

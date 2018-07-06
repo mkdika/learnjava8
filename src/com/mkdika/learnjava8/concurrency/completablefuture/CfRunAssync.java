@@ -17,17 +17,14 @@ public class CfRunAssync {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         // Run a task specified by a Runnable Object asynchronously.
                 
-        CompletableFuture<Void> future = CompletableFuture.runAsync(new Runnable() {
-            @Override
-            public void run() {        
-                try {
-                    // calculate something
-                    TimeUnit.SECONDS.sleep(2);
-                } catch (InterruptedException e) {
-                    throw new IllegalStateException(e);
-                }
-                System.out.println("I'll run in a separate thread than the main thread.");
+        CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
+            try {
+                // calculate something
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException e) {
+                throw new IllegalStateException(e);
             }
+            System.out.println("I'll run in a separate thread than the main thread.");
         });
 
         // Block and wait for the future to complete

@@ -17,7 +17,6 @@ package com.mkdika.learnjava8.pattern.creational.singleton;
 public final class TrueSingleton {
     
     private static volatile DummyService instance;
-    private static final Object key = new Object();
     
     // to protect class from being new instance from outside of class
     private TrueSingleton() {        

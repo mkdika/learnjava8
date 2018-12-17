@@ -2,9 +2,6 @@
 package com.mkdika.learnjava8.pattern.creational.singleton;
 
 /**
- *
- * @author Maikel Chandika <mkdika@gmail.com>
- * 
  * Double Check Locking Technique Singleton class
  * 
  * This class is to domonstrate the true lazy initialization 
@@ -13,6 +10,7 @@ package com.mkdika.learnjava8.pattern.creational.singleton;
  * - Multicore pararel and multithread friendly
  * - Atomic process
  * 
+ * @author Maikel Chandika <mkdika@gmail.com>
  */
 public final class TrueSingleton {
     

@@ -1,4 +1,4 @@
-package com.mkdika.learnjava8.algorithms.linkedlist;
+package com.mkdika.learnjava8.datastructure.linkedlist;
 
 /**
  *

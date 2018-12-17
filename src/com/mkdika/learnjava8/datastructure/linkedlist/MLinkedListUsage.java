@@ -1,4 +1,4 @@
-package com.mkdika.learnjava8.algorithms.linkedlist;
+package com.mkdika.learnjava8.datastructure.linkedlist;
 
 /**
  *
@@ -29,11 +29,5 @@ public class MLinkedListUsage {
         list.add(1);
         list.show();
 
-//        list.deleteNodeWithData(9);
-//        list.show();
-//        list.deleteNodeWithData(0);
-//        list.show();
-//        list.deleteNodeWithData(1);
-//        list.show();
     }
 }

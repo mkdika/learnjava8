@@ -16,7 +16,7 @@ public class TestConcurrentHashMap {
         // Map<String, Object> foodData = new HashMap<>();
         
         // this not throw exception because of thread-safe
-        Map<String, Object> foodData = new ConcurrentHashMap<String, Object>();
+        Map<String, Object> foodData = new ConcurrentHashMap<>();
         foodData.put("penguin", 1);
         foodData.put("flamingo", 2);
         for (String key : foodData.keySet()) {

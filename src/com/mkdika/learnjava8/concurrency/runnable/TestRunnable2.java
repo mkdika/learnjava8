@@ -19,11 +19,13 @@ public class TestRunnable2 {
         tB.start();
         tC.start();
         tD.start();
+        System.out.println(">>>>>>>>>>> MAIN THREAD DONE!");
 
         tA.join();
         tB.join();
         tC.join();
         tD.join();
+        System.exit(0);
     }
 
 }

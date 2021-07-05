@@ -19,8 +19,8 @@ public class TestArrayList {
         list.add(2);
         list.add(5);
         list.add(1);
-        list.add(4);               
-        
+        list.add(4);
+
         // print list size
         System.out.println("list size: " + list.size());
         

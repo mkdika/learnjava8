@@ -2,6 +2,7 @@ package com.mkdika.learnjava8.stream;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -28,6 +29,7 @@ public class ListAndCollection {
         System.out.println("");
         
         ns.forEach(ListAndCollection::cetak);
+
     }
     
     public static void cetak(int n) {

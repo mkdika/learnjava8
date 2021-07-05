@@ -1,5 +1,6 @@
 package com.mkdika.learnjava8.concurrency.runnable;
 
+import java.util.concurrent.ForkJoinPool;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,13 +10,15 @@ import java.util.logging.Logger;
  */
 public class TestRunnable1 {
    
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread threadA = new Thread(new Task(2000),"Task-A");        
         Thread threadB = new Thread(new Task(4000),"Task-B");
         
         threadB.start();
-        threadA.start();        
-    }            
+        threadA.start();
+        threadB.join();
+        threadA.join();
+    }
 
 }
 
